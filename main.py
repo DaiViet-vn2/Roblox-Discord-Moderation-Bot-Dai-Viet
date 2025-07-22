@@ -14,3 +14,5 @@ def run_discord():
 if __name__ == "__main__":
     threading.Thread(target=run_flask).start()
     run_discord()
+
+-- MADE BY DAI VIET --
