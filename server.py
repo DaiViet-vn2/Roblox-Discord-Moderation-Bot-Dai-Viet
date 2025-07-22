@@ -77,4 +77,4 @@ def unban():
 def run():
     app.run(host="0.0.0.0", port=5000)
 
--- MADE BY DAI VIET --
+# MADE BY DAI VIET
