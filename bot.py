@@ -204,4 +204,4 @@ async def check(interaction: discord.Interaction):
 if __name__ == "__main__":
     bot.run(TOKEN)
 
--- MADE BY DAI VIET --
+# MADE BY DAI VIET
