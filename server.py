@@ -15,11 +15,10 @@ def index():
 @app.route("/send_command", methods=["POST"])
 def send_command():
     data = request.json
-    print(f"Nhận command từ Discord bot: {data}")
+    print(f"Get commands Discord bot: {data}") #u can remove this line if u want
     commands.append(data)
     return jsonify({"status": "OK"})
-
-
+    
 @app.route("/get_commands", methods=["GET"])
 def get_commands():
     return jsonify(commands)
@@ -36,7 +35,7 @@ def update_players():
     global player_count
     data = request.json
     player_count = data.get("count", 0)
-    print(f"Số người chơi hiện tại: {player_count}")
+    print(f"Players: {player_count}")
     return jsonify({"status": "updated"})
 
 
@@ -77,3 +76,5 @@ def unban():
 
 def run():
     app.run(host="0.0.0.0", port=5000)
+
+-- MADE BY DAI VIET --
