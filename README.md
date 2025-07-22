@@ -14,7 +14,7 @@ Yotube : https://www.youtube.com/@DaiViet2
 
 Requirements: 
 - You must have a replit account
-- You can use Visual Studio Code, but you need to open Roblox Studio 24/7
+- You can use Visual Studio Code, but you need to have a HTTP Web
 
 How it works :
 - /kick {user_id} {reason} ( Kick from your game )
