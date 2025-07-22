@@ -29,7 +29,7 @@ end)
 
 function fetchCommands()
 	local success, response = pcall(function()
-		return HttpService:GetAsync("https://41e534d7-a1f7-4346-ab47-3482b88d3734-00-2zs5kr305c34g.pike.replit.dev/get_commands")
+		return HttpService:GetAsync("url/get_commands")
 	end)
 
 	if success then
@@ -92,7 +92,7 @@ function fetchCommands()
 		end
 
 		pcall(function()
-			HttpService:PostAsync("https://41e534d7-a1f7-4346-ab47-3482b88d3734-00-2zs5kr305c34g.pike.replit.dev/clear_commands", "")
+			HttpService:PostAsync("url/clear_commands", "")
 		end)
 	else
 		warn("[BanSystem] Failed to fetch commands:", response)
@@ -104,7 +104,7 @@ function updatePlayerCount()
 	local json = HttpService:JSONEncode({ count = count })
 	pcall(function()
 		HttpService:PostAsync(
-			"https://41e534d7-a1f7-4346-ab47-3482b88d3734-00-2zs5kr305c34g.pike.replit.dev/update_players",
+			"url/update_players",
 			json,
 			Enum.HttpContentType.ApplicationJson
 		)
